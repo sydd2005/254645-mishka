@@ -1,7 +1,18 @@
-.page-main {
-  &__title {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 27px;
-    line-height: 30px;
+.page-main__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin: 0;
+  &--index {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -15px;
+    padding-bottom: 120px;
   }
 }
