@@ -1,6 +1,11 @@
 .features {
-  padding-left: 30px;
-  padding-right: 30px;
+  @include inner-wrapper;
+}
+
+.features__title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .features__list {

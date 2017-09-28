@@ -68,7 +68,7 @@
         <p class="promo__picture">
           <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото корзинок">
         </p>
-        <span class="promo__price">Цена: 990 руб.</span>
+        <p class="promo__price">Цена: 990 руб.</p>
         <a href="order.html" class="promo__make-order button">Заказать</a>
       </section>
       <section class="features">
@@ -151,12 +151,14 @@
       <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="modal__fieldset">
           <legend class="modal__legend">Выберите размер:</legend>
-          <input class="modal__radio" type="radio" id="size-S" name="size" checked>
-          <label class="modal__label" for="size-S">S</label>
-          <input class="modal__radio" type="radio" id="size-M" name="size">
-          <label class="modal__label" for="size-M">M</label>
-          <input class="modal__radio" type="radio" id="size-L" name="size">
-          <label class="modal__label" for="size-L">L</label>
+          <div class="modal__radio-indicators">
+            <input class="modal__radio" type="radio" id="size-S" name="size" checked>
+            <label class="modal__label" for="size-S">S</label>
+            <input class="modal__radio" type="radio" id="size-M" name="size">
+            <label class="modal__label" for="size-M">M</label>
+            <input class="modal__radio" type="radio" id="size-L" name="size">
+            <label class="modal__label" for="size-L">L</label>
+          </div>
         </fieldset>
         <button class="modal__button button button--primary" type="submit">Добавить</button>
       </form>

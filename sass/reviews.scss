@@ -1,8 +1,23 @@
 .reviews {
-  padding-left: 30px;
-  padding-right: 30px;
+  @include inner-wrapper;
 }
 
 .reviews__item {
   margin: 0;
+}
+
+.reviews__text {
+  color: $text-color;
+}
+
+.reviews__author {
+  font-style: normal;
+}
+
+.reviews__author-name {
+  font-weight: bold;
+}
+
+.reviews__author-nickname {
+  color: $text-color;
 }

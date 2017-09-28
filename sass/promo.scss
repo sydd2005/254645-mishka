@@ -25,9 +25,24 @@
 }
 
 .promo__description {
-  color: #333333;
+  color: $text-color;
 }
 
 .promo__specs {
-  color: #333333;
+  color: $text-color;
+  margin-bottom: 28px;
+}
+
+.promo__picture {
+  margin: 0;
+}
+
+.promo__price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }

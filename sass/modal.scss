@@ -1,3 +1,56 @@
 .modal {
   @include inner-wrapper;
 }
+
+.modal__title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.modal__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.modal__legend {
+  font-size: 15px;
+  line-height: 30px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  text-align: center;
+}
+
+.modal__radio-indicators {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.modal__radio {
+  @include visually-hidden;
+}
+
+.modal__label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  color: $text-color;
+  width: 82px;
+  height: 52px;
+  border: 2px solid #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal__radio:checked + .modal__label {
+  border-color: $theme-color;
+}

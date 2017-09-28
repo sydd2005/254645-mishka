@@ -1,0 +1,8 @@
+.page-footer {
+  @include inner-wrapper;
+  background-color: #f1f1f1;
+}
+
+.page-footer__social {
+  margin: 0;
+}
