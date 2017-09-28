@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  background-color: transparent;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-color;
+  border: 2px solid $text-color;
+  width: 100%;
+  min-height: 52px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  &--primary {
+    background-color: $theme-color;
+    border: 0;
+    color: #ffffff;
+  }
+}

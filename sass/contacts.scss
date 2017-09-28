@@ -1,0 +1,32 @@
+.contacts {
+  color: #333333;
+}
+
+.contacts__title {
+  @include inner-wrapper;
+}
+
+.contacts__details {
+  font-style: normal;
+}
+
+.contacts__list {
+  @include inner-wrapper;
+}
+
+.contacts__item {
+  vertical-align: top;
+}
+
+.contacts__key {
+  min-width: 77px;
+}
+
+.contacts__inner-wrapper {
+  @include inner-wrapper;
+}
+
+.contacts__link {
+  color: #333333;
+  box-shadow: inset 0 -1px 0 0 #66cccc;
+}
