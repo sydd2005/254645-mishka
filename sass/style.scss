@@ -73,11 +73,19 @@ img {
 
 body {
   width: 322px;
+  margin: 20px;
 }
 
+@import "variables.scss";
+@import "mixins.scss";
+@import "button.scss";
 @import "logo.scss";
 @import "page-header.scss";
 @import "top-menu.scss";
 @import "page-main.scss";
 @import "product-groups.scss";
-
+@import "promo.scss";
+@import "features.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "modal.scss";
