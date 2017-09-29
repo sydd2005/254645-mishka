@@ -64,11 +64,13 @@
   border: 0;
   border-bottom: 2px solid $text-color;
   outline: none;
+
   &:focus {
     border-bottom-color: #62d1ba;
   }
+
   &::placeholder {
-    color: transparentize($text-color, .7);
+    color: transparentize($text-color, 0.7);
   }
 }
 
@@ -85,11 +87,13 @@
   color: $text-color;
   border: 2px solid $text-color;
   outline: none;
+
   &:focus {
     border-color: #62d1ba;
   }
+
   &::placeholder {
-    color: transparentize($text-color, .7);
+    color: transparentize($text-color, 0.7);
   }
 }
 
