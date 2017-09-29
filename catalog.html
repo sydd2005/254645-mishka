@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Мишка - Каталог товаров</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -37,52 +38,65 @@
         <ul class="catalog__list">
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__photo" src="http://placehold.it/260x195" width="260" height="195" alt="фото зайчика">
+              <img class="product-card__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="фото зайчика">
             </a>
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="product-card__info">Рост 30 см, вес 200 г</p>
-            <div class="product-card__footer">
-              <span class="product-card__price">1 200 руб.</span>
-              <button class="product-card__add-to-cart">Добавить в корзину</button>
+            <div class="product-card__info">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="product-card__specs">Рост 30 см, вес 200 г</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">1 200 руб.</span>
+                <button class="product-card__add-to-cart">Добавить в корзину</button>
+              </div>
             </div>
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__photo" src="http://placehold.it/260x195" width="260" height="195" alt="фото корзинки для белья">
+              <img class="product-card__photo" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="фото корзинки для белья">
             </a>
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Корзинка для белья</h3>
-            </a>
-            <p class="product-card__info">Диаметр 15 см, высота 10 см</p>
-            <div class="product-card__footer">
-              <span class="product-card__price">690 руб.</span>
-              <button class="product-card__add-to-cart">Добавить в корзину</button>
+            <div class="product-card__info">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Корзинка для белья</h3>
+              </a>
+              <p class="product-card__specs">Диаметр 15 см, высота 10 см</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">690 руб.</span>
+                <button class="product-card__add-to-cart">Добавить в корзину</button>
+              </div>
             </div>
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__photo" src="http://placehold.it/260x195" width="260" height="195" alt="фото большой корзинки">
+              <img class="product-card__photo" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="фото большой корзинки">
             </a>
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-            </a>
-            <p class="product-card__info">Диаметр 30 см, высота 30 см</p>
-            <div class="product-card__footer">
-              <span class="product-card__price">1 500 руб.</span>
-              <button class="product-card__add-to-cart">Добавить в корзину</button>
+            <div class="product-card__info">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="product-card__specs">Диаметр 30 см, высота 30 см</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">1 500 руб.</span>
+                <button class="product-card__add-to-cart">Добавить в корзину</button>
+              </div>
             </div>
           </li>
         </ul>
       </section>
       <section class="production-process">
-        <h2 class="producton-process__title">Процесс производства</h2>
-        <video class="production-process__video" src="#"></video>
-        <p class="production-process__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="production-process__make-order button" href="#">Сделать заказ</a>
+        <h2 class="production-process__title">Процесс производства</h2>
+        <div class="production-process__video-wrapper">
+          <video class="production-process__video" src="#" poster="img/video-mobile@1x.jpg"></video>
+          <p class="production-process__video-fallback">
+            <img class="production-process__photo" src="img/video-mobile@1x.jpg" width="260" height="150" alt="фото процесса производства">
+          </p>
+        </div>
+        <footer class="production-process__footer">
+          <p class="production-process__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+            <a class="production-process__make-order button" href="#">Сделать заказ</a>
+        </footer>
       </section>
     </main>
     <footer class="page-footer">
@@ -101,12 +115,14 @@
       <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="modal__fieldset">
           <legend class="modal__legend">Выберите размер:</legend>
-          <input class="modal__radio" type="radio" id="size-S" name="size" checked>
-          <label class="modal__label" for="size-S">S</label>
-          <input class="modal__radio" type="radio" id="size-M" name="size">
-          <label class="modal__label" for="size-M">M</label>
-          <input class="modal__radio" type="radio" id="size-L" name="size">
-          <label class="modal__label" for="size-L">L</label>
+          <div class="modal__radio-indicators">
+            <input class="modal__radio" type="radio" id="size-S" name="size" checked>
+            <label class="modal__label" for="size-S">S</label>
+            <input class="modal__radio" type="radio" id="size-M" name="size">
+            <label class="modal__label" for="size-M">M</label>
+            <input class="modal__radio" type="radio" id="size-L" name="size">
+            <label class="modal__label" for="size-L">L</label>
+          </div>
         </fieldset>
         <button class="modal__button button button--primary" type="submit">Добавить</button>
       </form>

@@ -34,7 +34,9 @@
 }
 
 .promo__picture {
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .promo__price {

@@ -38,7 +38,6 @@ body {
 
   color: #000000;
   background-color: #ffffff;
-  border: 1px solid gray;
 }
 
 a {
@@ -54,9 +53,4 @@ img {
 
 .visually-hidden {
   @include visually-hidden;
-}
-
-body {
-  width: 322px;
-  margin: 20px;
 }

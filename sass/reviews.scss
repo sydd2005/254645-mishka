@@ -12,6 +12,8 @@
 
 .reviews__author {
   font-style: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author-name {
