@@ -25,7 +25,7 @@
 }
 
 .order__legend {
-  font-size: 17px;
+  font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 16px;
 
@@ -37,13 +37,13 @@
 }
 
 .order__choice-label {
-  font-size: 17px;
+  font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 18px;
 }
 
 .order__text-label {
-  font-size: 17px;
+  font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 18px;
 
@@ -51,7 +51,7 @@
 }
 
 .order__text-input {
-  font-size: 17px;
+  font-size: $subtitle-font-size;
   line-height: 18px;
 
   width: 100%;
@@ -66,7 +66,7 @@
   outline: none;
 
   &:focus {
-    border-bottom-color: #62d1ba;
+    border-bottom-color: $theme-stroke-color;
   }
 
   &::placeholder {
@@ -75,7 +75,7 @@
 }
 
 .order__textarea {
-  font-size: 17px;
+  font-size: $subtitle-font-size;
   line-height: 18px;
 
   width: 100%;
@@ -85,11 +85,11 @@
   resize: none;
 
   color: $text-color;
-  border: 2px solid $text-color;
+  border: 2px solid $stroke-color;
   outline: none;
 
   &:focus {
-    border-color: #62d1ba;
+    border-color: $theme-stroke-color;
   }
 
   &::placeholder {

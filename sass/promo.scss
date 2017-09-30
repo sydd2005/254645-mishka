@@ -9,14 +9,14 @@
 
 .promo__title {
   font-weight: bold;
-  font-size: 25px;
+  font-size: $title-font-size;
   line-height: 30px;
   margin-top: 0;
   margin-bottom: 12px;
 }
 
 .promo__promo-category {
-  font-size: 17px;
+  font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 20px;
   color: #66cccc;
@@ -40,7 +40,7 @@
 }
 
 .promo__price {
-  font-size: 17px;
+  font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 24px;
   text-align: center;
