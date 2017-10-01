@@ -1,0 +1,6 @@
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width - 100;
+    margin: 0 auto;
+  }
+}
