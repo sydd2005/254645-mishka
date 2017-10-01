@@ -1,0 +1,25 @@
+.reviews {
+  @include inner-wrapper;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  color: $text-color;
+}
+
+.reviews__author {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__author-name {
+  font-weight: bold;
+}
+
+.reviews__author-nickname {
+  color: $text-color;
+}

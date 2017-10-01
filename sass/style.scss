@@ -1,0 +1,27 @@
+// shared
+@import "variables.scss";
+@import "mixins.scss";
+
+// scaffolding
+@import "scaffolding.scss";
+
+// BEM blocks
+@import "button.scss";
+@import "logo.scss";
+@import "top-menu.scss";
+@import "page-main.scss";
+@import "product-groups.scss";
+@import "promo.scss";
+@import "spec-table.scss";
+@import "features.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "map.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "copyright.scss";
+@import "modal.scss";
+@import "catalog.scss";
+@import "product-card.scss";
+@import "production-process.scss";
+@import "order.scss";

@@ -1,0 +1,49 @@
+.production-process {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 58px;
+  border: 1px solid #ededed;
+}
+
+.production-process__title {
+  padding-left: 90px;
+  font-size: $subtitle-font-size;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000000;
+}
+
+.production-process__video-wrapper {
+  position: relative;
+  height: 150px;
+}
+
+.production-process__video-fallback {
+  position: absolute;
+  left: -1px;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.production-process__video {
+  position: absolute;
+  left: -1px;
+  z-index: 2;
+}
+
+.production-process__footer {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.production-process__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $text-color;
+  margin-bottom: 28px;
+}
+
+.production-process__make-order {
+  margin-bottom: 33px;
+}

@@ -1,0 +1,14 @@
+.copyright {
+  min-height: 80px;
+  box-shadow: inset 0 1px 0 0 #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-right: 15px;
+}

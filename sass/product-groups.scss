@@ -1,0 +1,26 @@
+.product-groups__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-groups__link {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #ffffff;
+  display: block;
+  min-height: 103px;
+  padding-left: 30px;
+  padding-right: 160px;
+  padding-top: 27px;
+  padding-bottom: 28px;
+
+  &--light {
+    background-color: $theme-color;
+  }
+
+  &--dark {
+    background-color: $theme-dark-color;
+  }
+}

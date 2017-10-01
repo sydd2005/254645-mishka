@@ -1,0 +1,21 @@
+.features {
+  @include inner-wrapper;
+}
+
+.features__title {
+  font-size: $title-font-size;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  font-size: $subtitle-font-size;
+  font-weight: bold;
+  line-height: 20px;
+}
