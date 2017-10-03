@@ -49,6 +49,10 @@
   opacity: 0.2;
 }
 
+.top-menu__item--delivery {
+  display: none;
+}
+
 .top-menu__link {
   font-size: $subtitle-font-size;
   font-weight: bold;
@@ -120,6 +124,17 @@
 
     .top-menu__link {
       font-size: $subtitle-font-size;
+    }
+  }
+
+  .top-menu__item--delivery {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+
+    .top-menu__link {
+      font-weight: normal;
+      color: $text-color;
     }
   }
 

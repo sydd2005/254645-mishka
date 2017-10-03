@@ -48,3 +48,54 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: $tablet-content-width;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .promo__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo__title {
+    font-size: $tablet-title-font-size;
+  }
+
+  .promo__promo-category {
+    width: 100px;
+    text-align: center;
+  }
+
+  .promo__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: $tablet-content-width / 2 + 43px;
+    height: 404px;
+  }
+
+  .promo__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  .promo__photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .promo__description {
+    margin-top: 0;
+  }
+
+  .promo__price {
+    margin-top: auto;
+  }
+}
