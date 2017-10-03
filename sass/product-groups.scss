@@ -24,3 +24,26 @@
     background-color: $theme-dark-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .product-groups {
+    width: $tablet-width - 100;
+    margin: 0 auto;
+  }
+
+  .product-groups__list {
+    display: flex;
+  }
+
+  .product-groups__item {
+    width: 50%;
+  }
+
+  .product-groups__link {
+    min-height: 119px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 29px;
+    padding-bottom: 30px;
+  }
+}

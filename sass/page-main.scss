@@ -3,10 +3,7 @@
   line-height: 30px;
   text-align: center;
   background-color: #f1f1f1;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 75px 30px;
   margin: 0;
   margin-bottom: 30px;
 
@@ -23,5 +20,22 @@
   .page-main {
     margin-top: -88px;
     border-top: 1px solid #e7e7e7;
+  }
+
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 155px;
+  }
+
+  .page-main__title--index {
+    background-size: cover;
+    background-position: center;
+    height: 746px;
+    margin-bottom: -119px;
+
+    br:first-of-type {
+      display: none;
+    }
   }
 }
