@@ -23,3 +23,41 @@
 .reviews__author-nickname {
   color: $text-color;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+    width: $tablet-content-width;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviews__title {
+    font-size: $tablet-title-font-size;
+    order: 0;
+  }
+
+  .reviews__add {
+    width: 175px;
+    order: 1;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .reviews__author {
+    padding-right: 180px;
+  }
+}

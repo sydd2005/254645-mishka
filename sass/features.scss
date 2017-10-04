@@ -19,3 +19,44 @@
   font-weight: bold;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__title {
+    font-size: $tablet-title-font-size;
+  }
+
+  .features__item {
+    width: 50%;
+    padding-right: 100px;
+    order: 6; // новые пункты будут добавляться в конец списка
+  }
+
+  .features__item--flower {
+    order: 0;
+  }
+
+  .features__item--woolball {
+    order: 1;
+  }
+
+  .features__item--banknote {
+    order: 2;
+  }
+
+  .features__item--rocket {
+    order: 3;
+  }
+
+  .features__item--heart {
+    order: 4;
+  }
+
+  .features__item--gift {
+    order: 5;
+  }
+}
