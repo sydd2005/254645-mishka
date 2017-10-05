@@ -49,7 +49,8 @@
   opacity: 0.2;
 }
 
-.top-menu__item--delivery {
+.top-menu__item--delivery,
+.top-menu__item--desktop-only {
   display: none;
 }
 
@@ -141,5 +142,11 @@
   .top-menu__item--cart::before {
     width: 83px;
     height: 88px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-menu__item--desktop-only {
+    display: block;
   }
 }

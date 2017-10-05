@@ -21,6 +21,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    width: $tablet-content-width;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
   .features__list {
     display: flex;
     flex-wrap: wrap;

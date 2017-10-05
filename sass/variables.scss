@@ -4,14 +4,23 @@ $background-color: #ffffff;
 
 $title-font-size: 25px;
 $tablet-title-font-size: 43px;
+$tablet-title-line-height: 50px;
+$desktop-title-font-size: 53px;
+$desktop-title-line-height: 57px;
+
 $subtitle-font-size: 17px;
+
 $regular-font-size: 15px;
+$tablet-font-size: 17px;
+$tablet-line-height: 30px;
+
 $text-color: #444444;
 $stroke-color: #444444;
 $theme-color: #63d1bb;
 $theme-dark-color: #56c3b2;
 $theme-stroke-color: #62d1ba;
 $theme-hover-color: #46c1ae;
+
 $tablet-width: 768px;
 $tablet-horiz-padding: 50px;
 $tablet-content-width: $tablet-width - 2 * $tablet-horiz-padding;

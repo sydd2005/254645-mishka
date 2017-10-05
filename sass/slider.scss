@@ -40,6 +40,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider__list {
+    display: flex;
+  }
+
+  .slider__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .slider__toggle {
     border: 0;
     width: 88px;

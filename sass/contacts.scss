@@ -33,3 +33,37 @@
   color: $text-color;
   box-shadow: inset 0 -1px 0 0 $theme-stroke-color;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__title,
+  .contacts__list {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: $tablet-content-width;
+  }
+
+  .contacts__title {
+    font-size: $tablet-title-font-size;
+    line-height: $tablet-title-line-height;
+  }
+
+  .contacts__list {
+    font-size: $tablet-font-size;
+    line-height: $tablet-line-height;
+
+    tbody {
+      display: flex;
+    }
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__write-us {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
