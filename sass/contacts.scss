@@ -4,6 +4,7 @@
 
 .contacts__title {
   @include inner-wrapper;
+  color: $font-color;
 }
 
 .contacts__details {

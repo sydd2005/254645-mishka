@@ -6,3 +6,28 @@
 .page-footer__social {
   margin: 0;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-content-width;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 143px;
+  }
+
+  .page-footer__logo,
+  .page-footer__copyright {
+    width: 200px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}

@@ -20,3 +20,9 @@
     color: #ffffff;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: $tablet-font-size;
+  }
+}

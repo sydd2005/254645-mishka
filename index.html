@@ -148,32 +148,41 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item"><a href="#" class="social__link--instagram">Instagram</a></li>
-        <li class="social__item"><a href="#" class="social__link--facebook">Facebook</a></li>
-        <li class="social__item"><a href="#" class="social__link--twitter">Twitter</a></li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link logo">
+            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+          </a>
+        </div>
+        <ul class="page-footer__social social">
+          <li class="social__item"><a href="#" class="social__link--instagram">Instagram</a></li>
+          <li class="social__item"><a href="#" class="social__link--facebook">Facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link--twitter">Twitter</a></li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="modal__fieldset">
-          <legend class="modal__legend">Выберите размер:</legend>
-          <div class="modal__radio-indicators">
-            <input class="modal__radio" type="radio" id="size-S" name="size" checked>
-            <label class="modal__label" for="size-S">S</label>
-            <input class="modal__radio" type="radio" id="size-M" name="size">
-            <label class="modal__label" for="size-M">M</label>
-            <input class="modal__radio" type="radio" id="size-L" name="size">
-            <label class="modal__label" for="size-L">L</label>
-          </div>
-        </fieldset>
-        <button class="modal__button button button--primary" type="submit">Добавить</button>
-      </form>
+      <div class="modal__window">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <div class="modal__radio-indicators">
+              <input class="modal__radio" type="radio" id="size-S" name="size" checked>
+              <label class="modal__label" for="size-S">S</label>
+              <input class="modal__radio" type="radio" id="size-M" name="size">
+              <label class="modal__label" for="size-M">M</label>
+              <input class="modal__radio" type="radio" id="size-L" name="size">
+              <label class="modal__label" for="size-L">L</label>
+            </div>
+          </fieldset>
+          <button class="modal__button button button--primary" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
