@@ -65,13 +65,13 @@
   .top-menu__list {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    &::before {
-      content: "";
-      order: 1;
-      width: 100%;
-      height: 1px;
-    }
+  .top-menu__list::before {
+    content: "";
+    order: 1;
+    width: 100%;
+    height: 1px;
   }
 
   .top-menu__toggle {
@@ -101,7 +101,7 @@
 
   .top-menu__item--search {
     order: 0;
-    padding-left: 83px;
+    padding-left: 82px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
     margin-right: 0;
@@ -112,7 +112,7 @@
   }
 
   .top-menu__item--search::before {
-    width: 83px;
+    width: 82px;
     height: 88px;
     background-position: center 37px;
   }
@@ -120,12 +120,20 @@
   .top-menu__item--cart {
     order: 0;
     padding-top: 32px;
-    padding-left: 83px;
+    padding-left: 82px;
     margin-right: 0;
+    width: 264px;
+    display: flex;
+    justify-content: flex-end;
 
     .top-menu__link {
       font-size: $subtitle-font-size;
     }
+  }
+
+  .top-menu__item--cart::before {
+    width: 82px;
+    height: 88px;
   }
 
   .top-menu__item--delivery {
@@ -138,14 +146,78 @@
       color: $text-color;
     }
   }
-
-  .top-menu__item--cart::before {
-    width: 83px;
-    height: 88px;
-  }
 }
 
 @media (min-width: $desktop-width) {
+  .top-menu__item {
+    width: 235px;
+    order: 3;
+    margin: 0;
+  }
+
+  .top-menu__item--catalog {
+    width: 185px;
+    border-right: 1px solid #ececec;
+    order: 0;
+  }
+
+  .top-menu__item--order {
+    order: 0;
+    padding-left: 35px;
+  }
+
+  .top-menu__item--catalog,
+  .top-menu__item--order {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .top-menu__link {
+      font-size: $subtitle-font-size;
+    }
+  }
+
+  .top-menu__item--logo,
+  .top-menu__item--search,
+  .top-menu__item--cart {
+    order: 1;
+  }
+
+  .top-menu__item--logo {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .top-menu__logo-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-menu__item--search {
+    width: 84px;
+    margin-left: 70px;
+  }
+
+  .top-menu__item--cart {
+    width: 266px;
+  }
+
+  .top-menu__list::before {
+    order: 2;
+  }
+
+  .top-menu__item--new-arrivals {
+    width: 185px;
+  }
+
+  .top-menu__item--sale {
+    padding-left: 35px;
+  }
+
+  .top-menu__item--delivery {
+    margin-left: auto;
+    width: unset;
+  }
+
   .top-menu__item--desktop-only {
     display: block;
   }

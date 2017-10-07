@@ -27,7 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .product-groups {
-    width: $tablet-width - 100;
+    width: $tablet-content-width;
     margin: 0 auto;
   }
 
@@ -45,5 +45,16 @@
     line-height: 30px;
     padding-top: 29px;
     padding-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-groups {
+    width: $desktop-content-width;
+    margin-bottom: 70px;
+  }
+
+  .product-groups__link {
+    padding-right: 310px;
   }
 }
