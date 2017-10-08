@@ -31,3 +31,9 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-content-width;
+  }
+}
