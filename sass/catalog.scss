@@ -12,3 +12,13 @@
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    width: $tablet-content-width;
+  }
+
+  .catalog__item {
+    margin-bottom: 55px;
+  }
+}

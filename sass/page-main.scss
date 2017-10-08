@@ -25,13 +25,14 @@
   .page-main__title {
     font-size: $tablet-title-font-size;
     line-height: 50px;
-    padding-top: 155px;
+    padding-top: 101px;
   }
 
   .page-main__title--index {
     background-size: cover;
     background-position: center;
     height: 746px;
+    padding-top: 155px;
     margin-bottom: -119px;
 
     br:first-of-type {
