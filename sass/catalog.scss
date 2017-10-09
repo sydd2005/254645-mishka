@@ -22,3 +22,11 @@
     margin-bottom: 55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    width: $desktop-content-width;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

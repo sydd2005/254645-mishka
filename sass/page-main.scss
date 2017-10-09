@@ -45,5 +45,11 @@
   .page-main__title {
     font-size: $desktop-title-font-size;
     line-height: $desktop-title-line-height;
+    padding-bottom: 97px;
+    margin-bottom: 128px;
+  }
+
+  .page-main__title--index {
+    margin-bottom: -119px;
   }
 }
