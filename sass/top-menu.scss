@@ -4,7 +4,15 @@
 
 .top-menu__toggle {
   position: absolute;
-  right: 0;
+  right: 30px;
+  top: 32px;
+  font-size: 0;
+  width: 20px;
+  height: 2px;
+  padding: 0;
+  border: 1px solid #221f1f;
+  box-shadow: 0 6px 0 0 #221f1f,
+    0 12px 0 0 #221f1f;
 }
 
 .top-menu__list {
@@ -21,6 +29,16 @@
   padding-bottom: 28px;
   list-style: none;
   margin: 0;
+  display: none;
+}
+
+.top-menu__item--logo {
+  padding: 0;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ececec;
 }
 
 .top-menu__item--search::before {
@@ -79,6 +97,7 @@
   }
 
   .top-menu__item {
+    display: block;
     order: 2;
     border: 0;
     padding-left: 0;
@@ -90,6 +109,10 @@
     .top-menu__link {
       font-size: $regular-font-size;
     }
+  }
+
+  .top-menu__item--desktop-only {
+    display: none;
   }
 
   .top-menu__item--logo {

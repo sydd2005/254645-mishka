@@ -3,8 +3,8 @@
 }
 
 .promo__header {
-  margin-top: 33px;
-  margin-bottom: 30px;
+  margin-top: 27px;
+  margin-bottom: 23px;
 }
 
 .promo__title {
@@ -12,7 +12,7 @@
   font-size: $title-font-size;
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .promo__promo-category {
@@ -26,6 +26,8 @@
 
 .promo__description {
   color: $text-color;
+  font-size: $regular-font-size;
+  line-height: $regular-line-height;
 }
 
 .promo__specs {
