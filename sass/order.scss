@@ -128,6 +128,13 @@
   }
 }
 
+.order__input-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .order__footnote {
   font-size: 14px;
   line-height: 16px;
@@ -190,5 +197,40 @@
 
   .order__choice-label--color {
     width: 239px;
+  }
+
+  .order__input-list-item {
+    display: flex;
+    align-items: baseline;
+
+    .order__text-label {
+      margin-right: 25px;
+    }
+
+    .order__text-input {
+      padding-left: 18px;
+    }
+  }
+
+  .order__text-input--phone,
+  .order__text-input--email {
+    background-color: #f1f1f1;
+  }
+
+  .order__fieldset--grouped {
+    margin-bottom: 0;
+  }
+
+  .order__inner-wrapper {
+    width: $tablet-content-width;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .order__submit {
+    max-width: 230px;
   }
 }
