@@ -24,3 +24,37 @@
     background-color: $theme-dark-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .product-groups {
+    width: $tablet-content-width;
+    margin: 0 auto;
+  }
+
+  .product-groups__list {
+    display: flex;
+  }
+
+  .product-groups__item {
+    width: 50%;
+  }
+
+  .product-groups__link {
+    min-height: 119px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 29px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-groups {
+    width: $desktop-content-width;
+    margin-bottom: 70px;
+  }
+
+  .product-groups__link {
+    padding-right: 310px;
+  }
+}

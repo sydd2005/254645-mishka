@@ -19,3 +19,73 @@
   font-weight: bold;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: $tablet-content-width;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__title {
+    font-size: $tablet-title-font-size;
+    line-height: $tablet-title-line-height;
+  }
+
+  .features__item {
+    width: 50%;
+    padding-right: 40px;
+    order: 6; // новые пункты будут добавляться в конец списка
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .features__item--flower {
+    order: 0;
+  }
+
+  .features__item--woolball {
+    order: 1;
+  }
+
+  .features__item--banknote {
+    order: 2;
+  }
+
+  .features__item--rocket {
+    order: 3;
+  }
+
+  .features__item--heart {
+    order: 4;
+  }
+
+  .features__item--gift {
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: $desktop-content-width;
+    margin: 0 auto;
+    margin-bottom: 85px;
+    padding-left: 175px;
+  }
+
+  .features__title {
+    font-size: $desktop-title-font-size;
+    line-height: $desktop-title-line-height;
+  }
+
+  .features__item {
+    width: 350px;
+    padding-right: 55px;
+  }
+}

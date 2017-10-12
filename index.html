@@ -5,21 +5,49 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка - Главная</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("debug/mishka-index-mobile.jpg");
+      }
+      /* Планшет */
+
+      @media ( min-width: 768px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("debug/mishka-index-tablet.jpg");
+        }
+      }
+      /* Десктоп */
+
+      @media ( min-width: 1150px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("debug/mishka-index-desktop.jpg");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
       <nav class="page-header__menu top-menu">
         <button class="top-menu__toggle" type="button">Открыть меню</button>
         <ul class="top-menu__list">
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--logo">
             <a class="top-menu__logo-link logo">
               <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
             </a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--catalog">
             <a href="catalog.html" class="top-menu__link">Каталог товаров</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--order">
             <a href="form.html" class="top-menu__link">Вязание на заказ</a>
           </li>
           <li class="top-menu__item top-menu__item--search">
@@ -28,11 +56,20 @@
           <li class="top-menu__item top-menu__item--cart">
             <a href="#" class="top-menu__link">Корзина: пока пуста</a>
           </li>
+          <li class="top-menu__item top-menu__item--desktop-only top-menu__item--new-arrivals">
+            <a href="#" class="top-menu__link">Новые поступления</a>
+          </li>
+          <li class="top-menu__item top-menu__item--desktop-only top-menu__item--sale">
+            <a href="#" class="top-menu__link">Распродажа</a>
+          </li>
+          <li class="top-menu__item top-menu__item--delivery">
+            <a href="#" class="top-menu__link">Бесплатная доставка по России</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title page-main__title--index">Милые штуки<br>ручной<br>работы для дома</h1>
+      <h1 class="page-main__title page-main__title--index">Милые штуки <br>ручной<br>работы для дома</h1>
       <section class="product-groups">
         <h2 class="visually-hidden">Группы товаров</h2>
         <ul class="product-groups__list">
@@ -49,31 +86,33 @@
           <h2 class="promo__title">Вязаные корзинки</h2>
           <span class="promo__promo-category">товар недели</span>
         </header>
-        <p class="promo__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <table class="promo__specs spec-table">
-          <tr class="spec-table__item">
-            <td class="spec-table__key">Цвет:</td>
-            <td class="spec-table__value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="spec-table__item">
-            <td class="spec-table__key">Диаметр:</td>
-            <td class="spec-table__value">25 см</td>
-          </tr>
-          <tr class="spec-table__item">
-            <td class="spec-table__key">Высота:</td>
-            <td class="spec-table__value">15 см</td>
-          </tr>
-        </table>
-        <p class="promo__picture">
-          <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото корзинок">
-        </p>
-        <p class="promo__price">Цена: 990 руб.</p>
-        <a href="order.html" class="promo__make-order button">Заказать</a>
+        <div class="promo__body">
+          <p class="promo__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+          </p>
+          <table class="promo__specs spec-table">
+            <tr class="spec-table__item">
+              <td class="spec-table__key">Цвет:</td>
+              <td class="spec-table__value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="spec-table__item">
+              <td class="spec-table__key">Диаметр:</td>
+              <td class="spec-table__value">25 см</td>
+            </tr>
+            <tr class="spec-table__item">
+              <td class="spec-table__key">Высота:</td>
+              <td class="spec-table__value">15 см</td>
+            </tr>
+          </table>
+          <p class="promo__picture">
+            <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото корзинок">
+          </p>
+          <p class="promo__price">Цена: 990 руб.</p>
+          <a href="order.html" class="promo__make-order button">Заказать</a>
+        </div>
       </section>
       <section class="features">
-        <h2 class="features__title">Коротко о нас</h2>
+        <h2 class="features__title">Коротко о нас:</h2>
         <ul class="features__list">
           <li class="features__item features__item--flower">
             <p class="features__text">Экологически чистые материалы</p>
@@ -106,8 +145,8 @@
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle--prev" type="button">Предыдущий отзыв</button>
-          <button class="slider__toggle--next" type="button">Следующий отзыв</button>
+          <button class="slider__toggle slider__toggle--prev button" type="button">Предыдущий отзыв</button>
+          <button class="slider__toggle slider__toggle--next button" type="button">Следующий отзыв</button>
         </p>
         <button class="reviews__add button" type="button">Написать</button>
       </section>
@@ -137,32 +176,41 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item"><a href="#" class="social__link--instagram">Instagram</a></li>
-        <li class="social__item"><a href="#" class="social__link--facebook">Facebook</a></li>
-        <li class="social__item"><a href="#" class="social__link--twitter">Twitter</a></li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link logo">
+            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+          </a>
+        </div>
+        <ul class="page-footer__social social">
+          <li class="social__item"><a href="#" class="social__link social__link--instagram">Instagram</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="modal__fieldset">
-          <legend class="modal__legend">Выберите размер:</legend>
-          <div class="modal__radio-indicators">
-            <input class="modal__radio" type="radio" id="size-S" name="size" checked>
-            <label class="modal__label" for="size-S">S</label>
-            <input class="modal__radio" type="radio" id="size-M" name="size">
-            <label class="modal__label" for="size-M">M</label>
-            <input class="modal__radio" type="radio" id="size-L" name="size">
-            <label class="modal__label" for="size-L">L</label>
-          </div>
-        </fieldset>
-        <button class="modal__button button button--primary" type="submit">Добавить</button>
-      </form>
+      <div class="modal__window">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <div class="modal__radio-indicators">
+              <input class="modal__radio" type="radio" id="size-S" name="size" checked>
+              <label class="modal__label" for="size-S">S</label>
+              <input class="modal__radio" type="radio" id="size-M" name="size">
+              <label class="modal__label" for="size-M">M</label>
+              <input class="modal__radio" type="radio" id="size-L" name="size">
+              <label class="modal__label" for="size-L">L</label>
+            </div>
+          </fieldset>
+          <button class="modal__button button button--primary" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

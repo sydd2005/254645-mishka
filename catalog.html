@@ -11,15 +11,15 @@
       <nav class="page-header__menu top-menu">
         <button class="top-menu__toggle" type="button">Открыть меню</button>
         <ul class="top-menu__list">
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--logo">
             <a class="top-menu__logo-link logo" href="index.html">
-              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
-            </a>
+                  <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+                </a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--catalog">
             <a href="catalog.html" class="top-menu__link">Каталог товаров</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--order">
             <a href="form.html" class="top-menu__link">Вязание на заказ</a>
           </li>
           <li class="top-menu__item top-menu__item--search">
@@ -27,6 +27,15 @@
           </li>
           <li class="top-menu__item top-menu__item--cart">
             <a href="#" class="top-menu__link">Корзина: пока пуста</a>
+          </li>
+          <li class="top-menu__item top-menu__item--desktop-only top-menu__item--new-arrivals">
+            <a href="#" class="top-menu__link">Новые поступления</a>
+          </li>
+          <li class="top-menu__item top-menu__item--desktop-only top-menu__item--sale">
+            <a href="#" class="top-menu__link">Распродажа</a>
+          </li>
+          <li class="top-menu__item top-menu__item--delivery">
+            <a href="#" class="top-menu__link">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -37,8 +46,8 @@
         <h2 class="visually-hidden">Наша продукция</h2>
         <ul class="catalog__list">
           <li class="catalog__item product-card">
-            <a class="product-card__image-link" href="#">
-              <img class="product-card__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="фото зайчика">
+            <a class="product-card__image-link" href="index.html">
+              <img class="product-card__photo" src="img/photo-hare-mobile@1x.jpg" alt="фото зайчика">
             </a>
             <div class="product-card__info">
               <a class="product-card__link" href="#">
@@ -53,7 +62,7 @@
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__photo" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="фото корзинки для белья">
+              <img class="product-card__photo" src="img/photo-bowl-mobile@1x.jpg" alt="фото корзинки для белья">
             </a>
             <div class="product-card__info">
               <a class="product-card__link" href="#">
@@ -68,7 +77,7 @@
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__photo" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="фото большой корзинки">
+              <img class="product-card__photo" src="img/photo-toys-mobile@1x.jpg" alt="фото большой корзинки">
             </a>
             <div class="product-card__info">
               <a class="product-card__link" href="#">
@@ -86,10 +95,10 @@
       <section class="production-process">
         <h2 class="production-process__title">Процесс производства</h2>
         <div class="production-process__video-wrapper">
-          <video class="production-process__video" src="#" poster="img/video-mobile@1x.jpg"></video>
           <p class="production-process__video-fallback">
-            <img class="production-process__photo" src="img/video-mobile@1x.jpg" width="260" height="150" alt="фото процесса производства">
+            <img class="production-process__photo" src="img/video-mobile@1x.jpg" alt="фото процесса производства">
           </p>
+          <video class="production-process__video" src="#"></video>
         </div>
         <footer class="production-process__footer">
           <p class="production-process__description">
@@ -100,32 +109,41 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item"><a href="#" class="social__link--instagram">Instagram</a></li>
-        <li class="social__item"><a href="#" class="social__link--facebook">Facebook</a></li>
-        <li class="social__item"><a href="#" class="social__link--twitter">Twitter</a></li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link logo" href="index.html">
+              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+            </a>
+        </div>
+        <ul class="page-footer__social social">
+          <li class="social__item"><a href="#" class="social__link social__link--instagram">Instagram</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="modal__fieldset">
-          <legend class="modal__legend">Выберите размер:</legend>
-          <div class="modal__radio-indicators">
-            <input class="modal__radio" type="radio" id="size-S" name="size" checked>
-            <label class="modal__label" for="size-S">S</label>
-            <input class="modal__radio" type="radio" id="size-M" name="size">
-            <label class="modal__label" for="size-M">M</label>
-            <input class="modal__radio" type="radio" id="size-L" name="size">
-            <label class="modal__label" for="size-L">L</label>
-          </div>
-        </fieldset>
-        <button class="modal__button button button--primary" type="submit">Добавить</button>
-      </form>
+      <div class="modal__window">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__order" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <div class="modal__radio-indicators">
+              <input class="modal__radio" type="radio" id="size-S" name="size" checked>
+              <label class="modal__label" for="size-S">S</label>
+              <input class="modal__radio" type="radio" id="size-M" name="size">
+              <label class="modal__label" for="size-M">M</label>
+              <input class="modal__radio" type="radio" id="size-L" name="size">
+              <label class="modal__label" for="size-L">L</label>
+            </div>
+          </fieldset>
+          <button class="modal__button button button--primary" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

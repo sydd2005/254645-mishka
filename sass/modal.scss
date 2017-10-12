@@ -1,8 +1,14 @@
-.modal {
+.modal__window {
   padding-top: 33px;
   padding-bottom: 46px;
 
   @include inner-wrapper;
+  border: 1px solid #c7c7c7;
+
+  @media (max-width: $tablet-width - 1) {
+    border-left: 0;
+    border-right: 0;
+  }
 }
 
 .modal__title {
@@ -72,4 +78,32 @@
 
 .modal__radio:checked + .modal__label {
   border-color: $theme-color;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 566px;
+    height: 336px;
+    margin: 20px auto;
+  }
+
+  .modal__title {
+    font-size: $tablet-subtitle-font-size;
+    line-height: $tablet-subtitle-line-height;
+  }
+
+  .modal__legend {
+    font-size: $tablet-font-size;
+  }
+
+  .modal__label {
+    width: 112px;
+  }
+
+  .modal__button {
+    width: 350px;
+  }
 }

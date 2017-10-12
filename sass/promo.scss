@@ -3,8 +3,8 @@
 }
 
 .promo__header {
-  margin-top: 33px;
-  margin-bottom: 30px;
+  margin-top: 27px;
+  margin-bottom: 23px;
 }
 
 .promo__title {
@@ -12,7 +12,7 @@
   font-size: $title-font-size;
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .promo__promo-category {
@@ -26,6 +26,8 @@
 
 .promo__description {
   color: $text-color;
+  font-size: $regular-font-size;
+  line-height: $regular-line-height;
 }
 
 .promo__specs {
@@ -47,4 +49,102 @@
   margin: 0;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: $tablet-content-width;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .promo__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .promo__title {
+    font-size: $tablet-title-font-size;
+    line-height: $tablet-title-line-height;
+  }
+
+  .promo__promo-category {
+    width: 100px;
+    text-align: center;
+  }
+
+  .promo__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: $tablet-content-width / 2 + 43px;
+    height: 404px;
+  }
+
+  .promo__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  .promo__photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .promo__description {
+    margin-top: 0;
+    font-size: $tablet-font-size;
+    line-height: $tablet-line-height;
+  }
+
+  .promo__price {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+    width: $desktop-content-width;
+    min-height: 636px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 165px;
+  }
+
+  .promo__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+  }
+
+  .promo__title {
+    font-size: $desktop-title-font-size;
+    line-height: $desktop-title-line-height;
+  }
+
+  .promo__body {
+    position: static;
+    height: auto;
+    margin-left: 175px;
+    width: 292px;
+    padding: 0;
+  }
+
+  .promo__promo-category {
+    width: 175px;
+    padding: 0 25px;
+  }
+
+  .promo__picture {
+    z-index: -1;
+    width: 525px;
+    height: 636px;
+  }
 }
