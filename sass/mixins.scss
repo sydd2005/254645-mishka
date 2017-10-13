@@ -40,14 +40,7 @@
     background-repeat: repeat no-repeat;
     background-position: 0 + $wave-offset top;
     background-size: (3 * $wave-height) $wave-height;
-    background-image: radial-gradient(
-      ellipse at $wave-height ($wave-height + 2),
-      transparent ($wave-height - $wave-thickness - 2),
-      $color ($wave-height - $wave-thickness - 1),
-      $color ($wave-height - 1),
-      transparent $wave-height,
-      transparent 100%
-    );
+    background-image: radial-gradient(ellipse at $wave-height ($wave-height + 2), transparent ($wave-height - $wave-thickness - 2), $color ($wave-height - $wave-thickness - 1), $color ($wave-height - 1), transparent $wave-height, transparent 100%);
   }
 
   &::after {
@@ -56,14 +49,7 @@
     bottom: -($wave-height - $wave-thickness - 1);
     height: (2 * $wave-height);
     width: 100%;
-    background-image: radial-gradient(
-      ellipse at $wave-height -2px,
-      transparent ($wave-height - $wave-thickness - 2),
-      $color ($wave-height - $wave-thickness - 1),
-      $color ($wave-height - 1),
-      transparent $wave-height,
-      transparent 100%
-    );
+    background-image: radial-gradient(ellipse at $wave-height -2px, transparent ($wave-height - $wave-thickness - 2), $color ($wave-height - $wave-thickness - 1), $color ($wave-height - 1), transparent $wave-height, transparent 100%);
     background-size: (3 * $wave-height) $wave-height;
     background-repeat: repeat no-repeat;
     background-position: -(1.5 * $wave-height) + $wave-offset $wave-height;
