@@ -1,10 +1,15 @@
 .contacts {
   color: $text-color;
+  padding-top: 34px;
 }
 
 .contacts__title {
   @include inner-wrapper;
+  font-size: 18px;
+  line-height: 30px;
   color: $font-color;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .contacts__details {
@@ -13,16 +18,28 @@
 }
 
 .contacts__list {
-  @include inner-wrapper;
-  margin-bottom: 40px;
+  border-collapse: collapse;
+  max-width: $mobile-content-width;
+  margin: 0 auto;
+  margin-bottom: 8px;
 }
 
 .contacts__item {
   vertical-align: top;
+
+  td {
+    padding-bottom: 29px;
+  }
 }
 
 .contacts__key {
   min-width: 77px;
+}
+
+.contacts__text,
+.contacts__link {
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .contacts__inner-wrapper {
@@ -32,7 +49,8 @@
 
 .contacts__link {
   color: $text-color;
-  box-shadow: inset 0 -1px 0 0 $theme-stroke-color;
+  box-shadow: 0 4px 0 0 $background-color,
+    0 5px 0 0 $theme-stroke-color;
 }
 
 @media (min-width: $tablet-width) {
