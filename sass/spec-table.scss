@@ -2,14 +2,18 @@
   font-size: 15px;
   line-height: 24px;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .spec-table__item {
   box-shadow: inset 0 -1px 0 0 #ececec;
 
   td {
-    padding: 0;
-    padding-top: 8px;
+    padding-top: 9px;
     padding-bottom: 8px;
   }
+}
+
+.spec-table__value {
+  padding-left: 15px;
 }

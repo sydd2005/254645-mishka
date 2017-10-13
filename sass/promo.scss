@@ -1,5 +1,20 @@
 .promo {
   @include inner-wrapper;
+  margin-bottom: 50px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-size: 20px 10px;
+    background-repeat: repeat-x;
+    background-image: radial-gradient(ellipse at 15px bottom, transparent 3px, black 3px, black 5px, transparent 5px, transparent 100%);
+    background-position-x: 5px;
+  }
 }
 
 .promo__header {

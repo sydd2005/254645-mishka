@@ -1,5 +1,20 @@
 .features {
   @include inner-wrapper;
+  padding-top: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-size: 20px 10px;
+    background-repeat: repeat-x;
+    background-image: radial-gradient(ellipse at 5px top, transparent 3px, black 3px, black 5px, transparent 5px, transparent 100%);
+    background-position-x: 5px;
+  }
 }
 
 .features__title {

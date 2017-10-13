@@ -5,6 +5,7 @@
 }
 
 .product-groups__link {
+  position: relative;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
@@ -16,12 +17,34 @@
   padding-top: 27px;
   padding-bottom: 28px;
 
-  &--light {
-    background-color: $theme-color;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+}
 
-  &--dark {
-    background-color: $theme-dark-color;
+.product-groups__link--light {
+  background-color: $theme-color;
+
+  &::before {
+    background-image: url("../img/icon-interior.svg");
+  }
+}
+
+.product-groups__link--dark {
+  background-color: $theme-dark-color;
+
+  &::before {
+    background-image: url("../img/icon-toy.svg");
   }
 }
 
