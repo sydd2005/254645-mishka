@@ -1,8 +1,10 @@
 .spec-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
   font-size: 15px;
   line-height: 24px;
-  width: 100%;
-  border-collapse: collapse;
 }
 
 .spec-table__item {
@@ -16,4 +18,10 @@
 
 .spec-table__value {
   padding-left: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .spec-table__value {
+    padding-left: 0;
+  }
 }
