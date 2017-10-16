@@ -1,52 +1,60 @@
 .features {
-  @include inner-wrapper;
-  padding-top: 27px;
   position: relative;
+
   margin-bottom: 55px;
+  padding-top: 27px;
+
+  @include inner-wrapper;
 }
 
 .features__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+
   font-size: $title-font-size;
   font-weight: bold;
   line-height: 30px;
-  margin-top: 0;
-  margin-bottom: 26px;
 }
 
 .features__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .features__item {
+  margin-bottom: 23px;
+  padding-top: 60px;
+  padding-right: 10px;
+
   font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 20px;
-  padding-top: 60px;
-  padding-right: 10px;
-  margin-bottom: 23px;
 }
 
 .features__item--flower {
+  padding-right: 65px;
+
   background-image: url("../img/icon-feature-flower.svg");
   background-repeat: no-repeat;
   background-position: 8px 5px;
-  padding-right: 65px;
 }
 
 .features__item--banknote {
+  padding-right: 40px;
+
   background-image: url("../img/icon-feature-money.svg");
   background-repeat: no-repeat;
   background-position: 0 7px;
-  padding-right: 40px;
 }
 
 .features__item--heart {
+  padding-right: 55px;
+
   background-image: url("../img/icon-feature-heart.svg");
   background-repeat: no-repeat;
   background-position: 8px 12px;
-  padding-right: 55px;
 }
 
 .features__item--woolball {
@@ -75,7 +83,7 @@
   .features {
     width: $tablet-content-width;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
     padding: 0;
   }
 
@@ -85,20 +93,27 @@
   }
 
   .features__title {
+    margin-bottom: 45px;
+
     font-size: $tablet-title-font-size;
     line-height: $tablet-title-line-height;
   }
 
   .features__item {
-    width: 50%;
-    padding-right: 40px;
     order: 6; // новые пункты будут добавляться в конец списка
+
+    width: 50%;
+    margin-bottom: 50px;
+    padding-right: 40px;
+
     font-size: 20px;
     line-height: 22px;
   }
 
   .features__item--flower {
     order: 0;
+
+    padding-right: 105px;
   }
 
   .features__item--woolball {
@@ -107,6 +122,8 @@
 
   .features__item--banknote {
     order: 2;
+
+    padding-right: 100px;
   }
 
   .features__item--rocket {
@@ -115,6 +132,8 @@
 
   .features__item--heart {
     order: 4;
+
+    padding-right: 100px;
   }
 
   .features__item--gift {
