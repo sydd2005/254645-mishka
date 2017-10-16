@@ -8,27 +8,27 @@
     <!-- Pixel Glass -->
     <style>
       HTML {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url("debug/mishka-catalog-mobile.jpg");
-      }
-      /* Планшет */
+              /* По умолчанию показывается мобильный макет */
+              background-image: url("debug/mishka-catalog-mobile.jpg");
+              background-repeat: no-repeat;
+              background-position: 50% 0;
+            }
+            /* Планшет */
 
-      @media ( min-width: 768px) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url("debug/mishka-catalog-tablet.jpg");
-        }
-      }
-      /* Десктоп */
+            @media ( min-width: 768px) {
+              HTML {
+                /* Планшетный макет */
+                background-image: url("debug/mishka-catalog-tablet.jpg");
+              }
+            }
+            /* Десктоп */
 
-      @media ( min-width: 1150px) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url("debug/mishka-catalog-desktop.jpg");
-        }
-      }
+            @media ( min-width: 1150px) {
+              HTML {
+                /* Десктопный макет */
+                background-image: url("debug/mishka-catalog-desktop.jpg");
+              }
+            }
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script src="../node_modules/pixel-glass/script.js"></script>
@@ -69,7 +69,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <h1 class="page-main__title page-main__title--wavy">Каталог товаров</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Наша продукция</h2>
         <ul class="catalog__list">

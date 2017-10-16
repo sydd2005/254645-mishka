@@ -57,9 +57,14 @@
     @include wave;
   }
 
+  .page-main__title--wavy {
+    @include wave;
+  }
+
   .page-main__title {
     margin-bottom: 80px;
-    padding-top: 101px;
+    padding-top: 94px;
+    padding-bottom: 79px;
 
     font-size: $tablet-title-font-size;
     line-height: 50px;
