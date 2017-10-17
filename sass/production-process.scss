@@ -170,7 +170,8 @@
 
     width: $desktop-content-width;
     height: 455px;
-    padding-top: 40px;
+    margin-bottom: 104px;
+    padding-top: 44px;
     padding-bottom: 59px;
     padding-left: 682px;
 
@@ -187,11 +188,13 @@
   }
 
   .production-process__title {
+    margin-bottom: 33px;
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .production-process__title::before {
-    top: 0;
+    top: -4px;
     left: 80px;
   }
 
