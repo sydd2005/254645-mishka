@@ -145,14 +145,27 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    margin-bottom: 59px;
+    padding-bottom: 0;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  .promo__wrapper {
     position: relative;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     width: $desktop-content-width;
-    min-height: 636px + 42px;
-    margin-bottom: 165px;
+    min-height: 636px + 96px;
+    padding-top: 53px;
+    padding-bottom: 96px;
+
+    @include wavy-line;
   }
 
   .promo__header {
@@ -161,6 +174,7 @@
 
     width: 100%;
     margin: 0;
+    margin-bottom: 42px;
   }
 
   .promo__title {
@@ -171,10 +185,17 @@
   .promo__body {
     position: static;
 
+    flex-grow: 1;
+
     width: 292px;
     height: auto;
     margin-left: 175px;
     padding: 0;
+  }
+
+  .promo__description {
+    margin: 0;
+    margin-bottom: 47px;
   }
 
   .promo__promo-category {

@@ -145,7 +145,7 @@
   .features {
     width: $desktop-content-width;
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 40px;
     padding-left: 175px;
   }
 
@@ -157,5 +157,14 @@
   .features__item {
     width: 350px;
     padding-right: 55px;
+  }
+
+  .features__item--flower {
+    padding-right: 120px;
+  }
+
+  .features__item--banknote,
+  .features__item--heart {
+    padding-right: 110px;
   }
 }

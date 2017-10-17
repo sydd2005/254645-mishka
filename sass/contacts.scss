@@ -155,7 +155,7 @@
     min-height: 457px;
     margin: 0 auto;
     margin-bottom: 105px;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-right: $desktop-content-width / 2;
   }
 
@@ -170,13 +170,25 @@
 
   .contacts__title {
     margin: 0;
+    padding-left: 168px;
 
     font-size: $desktop-title-font-size;
     line-height: $desktop-title-line-height;
+
+    &::before {
+      top: -8px;
+      left: 62px;
+    }
+
+    &::after {
+      top: -5px;
+      left: 70px;
+    }
   }
 
   .contacts__details {
     margin: 0;
+    padding-left: 175px;
   }
 
   .contacts__list,
@@ -200,7 +212,6 @@
     margin: 0;
   }
 
-  .contacts__title,
   .contacts__list,
   .contacts__inner-wrapper {
     padding-left: 175px;

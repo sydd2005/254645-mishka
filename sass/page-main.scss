@@ -84,6 +84,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__header {
+    margin-bottom: 71px;
+  }
+
   .page-main__title {
     margin-bottom: 128px;
     padding-bottom: 97px;
