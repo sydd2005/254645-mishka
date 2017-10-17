@@ -300,6 +300,7 @@
   }
 
   .order__fieldset-wrapper {
+    align-items: baseline;
     flex-direction: row;
     flex-wrap: nowrap;
 
@@ -390,8 +391,18 @@
   }
 
   .order__fieldset--grouped + .order__fieldset--grouped {
-    padding-top: 0;
-    padding-bottom: 28px;
+    padding-top: 9px;
+    padding-bottom: 38px;
+  }
+
+  .order__hidden-label--phone::after {
+    top: -11px;
+    right: 19px;
+  }
+
+  .order__hidden-label--email::after {
+    top: -7px;
+    right: 18px;
   }
 
   .order__inner-wrapper {
@@ -401,7 +412,7 @@
     justify-content: space-between;
 
     width: $tablet-content-width;
-    margin: 0 auto;
+    margin: 25px auto;
     margin-bottom: 50px;
   }
 
