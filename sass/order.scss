@@ -458,6 +458,12 @@
 
   .order__inner-wrapper {
     width: $desktop-content-width;
+    margin-top: 20px;
     padding: 0 175px;
+  }
+
+  .order__hidden-label--phone::after,
+  .order__hidden-label--email::after {
+    right: 0;
   }
 }
