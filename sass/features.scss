@@ -1,8 +1,16 @@
 .features {
+  position: relative;
+
+  margin-bottom: 55px;
+  padding-top: 27px;
+
   @include inner-wrapper;
 }
 
 .features__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+
   font-size: $title-font-size;
   font-weight: bold;
   line-height: 30px;
@@ -11,20 +19,71 @@
 .features__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .features__item {
+  margin-bottom: 23px;
+  padding-top: 60px;
+  padding-right: 10px;
+
   font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 20px;
+}
+
+.features__item--flower {
+  padding-right: 65px;
+
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+}
+
+.features__item--banknote {
+  padding-right: 40px;
+
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+}
+
+.features__item--heart {
+  padding-right: 55px;
+
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 12px;
+}
+
+.features__item--woolball {
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+  background-position: 3px 9px;
+}
+
+.features__item--rocket {
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+
+.features__item--gift {
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 3px 8px;
+}
+
+.features__text {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .features {
     width: $tablet-content-width;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
     padding: 0;
   }
 
@@ -34,20 +93,27 @@
   }
 
   .features__title {
+    margin-bottom: 45px;
+
     font-size: $tablet-title-font-size;
     line-height: $tablet-title-line-height;
   }
 
   .features__item {
-    width: 50%;
-    padding-right: 40px;
     order: 6; // новые пункты будут добавляться в конец списка
+
+    width: 50%;
+    margin-bottom: 50px;
+    padding-right: 40px;
+
     font-size: 20px;
     line-height: 22px;
   }
 
   .features__item--flower {
     order: 0;
+
+    padding-right: 105px;
   }
 
   .features__item--woolball {
@@ -56,6 +122,8 @@
 
   .features__item--banknote {
     order: 2;
+
+    padding-right: 100px;
   }
 
   .features__item--rocket {
@@ -64,6 +132,8 @@
 
   .features__item--heart {
     order: 4;
+
+    padding-right: 100px;
   }
 
   .features__item--gift {
@@ -75,7 +145,7 @@
   .features {
     width: $desktop-content-width;
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 40px;
     padding-left: 175px;
   }
 
@@ -87,5 +157,14 @@
   .features__item {
     width: 350px;
     padding-right: 55px;
+  }
+
+  .features__item--flower {
+    padding-right: 120px;
+  }
+
+  .features__item--banknote,
+  .features__item--heart {
+    padding-right: 110px;
   }
 }

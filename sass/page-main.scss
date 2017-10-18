@@ -1,57 +1,106 @@
+.page-main__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 488px;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -19px;
+}
+
 .page-main__title {
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  background-color: #f1f1f1;
-  padding: 75px 30px;
   margin: 0;
   margin-bottom: 30px;
+  padding-top: 70px;
+  padding-right: $mobile-horiz-padding;
+  padding-bottom: 76px;
+  padding-left: $mobile-horiz-padding;
+
+  text-align: center;
+
+  background-color: #f1f1f1;
+
+  font-size: 27px;
+  line-height: 30px;
 }
 
 .page-main__title--index {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -15px;
-  padding-top: 70px;
-  padding-bottom: 122px;
   margin-bottom: 0;
+  padding-top: 70px;
+
+  background-color: transparent;
+}
+
+.page-main__title--form {
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
     margin-top: -88px;
+
     border-top: 1px solid #e7e7e7;
   }
 
+  .page-main__header {
+    min-height: 744px;
+    max-height: 744px;
+    margin-bottom: 45px;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .page-main__header--wavy {
+    @include wave;
+  }
+
+  .page-main__title--wavy {
+    @include wave;
+  }
+
   .page-main__title {
+    margin-bottom: 80px;
+    padding-top: 94px;
+    padding-bottom: 79px;
+
     font-size: $tablet-title-font-size;
     line-height: 50px;
-    padding-top: 101px;
-    margin-bottom: 80px;
   }
 
   .page-main__title--index {
-    background-size: cover;
-    background-position: center;
-    height: 746px;
     padding-top: 155px;
-    margin-bottom: -119px;
 
     br:first-of-type {
       display: none;
     }
   }
+
+  .page-main__title--form {
+    margin-bottom: 73px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__header {
+    margin-bottom: 71px;
+  }
+
   .page-main__title {
+    margin-bottom: 128px;
+    padding-bottom: 100px;
+
     font-size: $desktop-title-font-size;
     line-height: $desktop-title-line-height;
-    padding-bottom: 97px;
-    margin-bottom: 128px;
   }
 
   .page-main__title--index {
     margin-bottom: -119px;
+  }
+
+  .page-main__title--form {
+    margin-bottom: 123px;
   }
 }

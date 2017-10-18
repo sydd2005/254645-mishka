@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка - Вязание на заказ</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+              /* По умолчанию показывается мобильный макет */
+              background-image: url("debug/mishka-form-mobile.jpg");
+              background-repeat: no-repeat;
+              background-position: 50% 0;
+            }
+            /* Планшет */
+
+            @media ( min-width: 768px) {
+              HTML {
+                /* Планшетный макет */
+                background-image: url("debug/mishka-form-tablet.jpg");
+              }
+            }
+            /* Десктоп */
+
+            @media ( min-width: 1150px) {
+              HTML {
+                /* Десктопный макет */
+                background-image: url("debug/mishka-form-desktop.jpg");
+              }
+            }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
       <header class="page-header">
@@ -41,7 +69,7 @@
           </nav>
         </header>
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <h1 class="page-main__title page-main__title--form page-main__title--wavy">Вязание на заказ</h1>
       <form class="order" action="https://echo.htmlacademy.ru" method="POST">
         <p class="order__intro">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -78,7 +106,7 @@
         </fieldset>
         <fieldset class="order__fieldset">
           <div class="order__fieldset-wrapper">
-            <legend class="order__legend">Фио</legend>
+            <legend class="order__legend order__legend--fullname">Фио</legend>
             <ul class="order__input-list">
               <li class="order__input-list-item">
                 <label class="order__text-label" for="surname">Имя:</label>
@@ -98,13 +126,17 @@
         <fieldset class="order__fieldset order__fieldset--dark order__fieldset--grouped">
           <div class="order__fieldset-wrapper">
             <legend class="order__legend">Тел</legend>
-            <input class="order__text-input order__text-input--phone" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            <label class="order__hidden-label order__hidden-label--phone">
+              <input class="order__text-input order__text-input--phone" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            </label>
           </div>
         </fieldset>
         <fieldset class="order__fieldset order__fieldset--dark order__fieldset--grouped">
           <div class="order__fieldset-wrapper">
             <legend class="order__legend">E-mail</legend>
-            <input class="order__text-input order__text-input--email" type="email" id="email" name="email" placeholder="Ваш Email*">
+            <label class="order__hidden-label order__hidden-label--email">
+              <input class="order__text-input order__text-input--email" type="email" id="email" name="email" placeholder="Ваш Email*">
+            </label>
           </div>
         </fieldset>
         <fieldset class="order__fieldset">

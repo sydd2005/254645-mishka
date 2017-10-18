@@ -3,6 +3,7 @@ $font-color: #000000;
 $background-color: #ffffff;
 
 $title-font-size: 25px;
+$title-line-height: 30px;
 $tablet-title-font-size: 43px;
 $tablet-title-line-height: 50px;
 $desktop-title-font-size: 53px;
@@ -24,6 +25,9 @@ $theme-dark-color: #56c3b2;
 $theme-stroke-color: #62d1ba;
 $theme-hover-color: #46c1ae;
 
+$mobile-width: 320px;
+$mobile-horiz-padding: 30px;
+$mobile-content-width: $mobile-width - 2 * $mobile-horiz-padding;
 $tablet-width: 768px;
 $tablet-horiz-padding: 50px;
 $tablet-content-width: $tablet-width - 2 * $tablet-horiz-padding;

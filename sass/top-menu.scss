@@ -4,12 +4,35 @@
 
 .top-menu__toggle {
   position: absolute;
-  right: 30px;
-  top: 32px;
+  // right: 30px;
+  // top: 32px;
+  top: 0;
+  right: 0;
+
+  width: 80px;
+  height: 78px;
+  padding: 0;
+
+  border: 0;
+  background-color: transparent;
+
   font-size: 0;
+}
+
+.top-menu__toggle::before {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   width: 20px;
   height: 2px;
-  padding: 0;
+  margin: auto;
+  margin-top: 0;
+
+  content: "";
+
   border: 1px solid #221f1f;
   box-shadow: 0 6px 0 0 #221f1f,
     0 12px 0 0 #221f1f;
@@ -22,49 +45,61 @@
 
 .top-menu__item {
   position: relative;
+
+  display: none;
+
   min-height: 79px;
-  border-bottom: 1px solid #ececec;
-  padding-left: 75px;
+  margin: 0;
   padding-top: 27px;
   padding-bottom: 28px;
+  padding-left: 75px;
+
   list-style: none;
-  margin: 0;
-  display: none;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .top-menu__item--logo {
-  padding: 0;
-  min-height: 80px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  min-height: 80px;
+  padding: 0;
+
   border-top: 1px solid #ececec;
 }
 
 .top-menu__item--search::before {
-  content: "";
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+
   width: 75px;
   height: 79px;
+
+  content: "";
+
+  opacity: 0.2;
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.2;
 }
 
 .top-menu__item--cart::before {
-  content: "";
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+
   width: 75px;
   height: 79px;
+
+  content: "";
+
+  opacity: 0.2;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.2;
 }
 
 .top-menu__item--delivery,
@@ -73,10 +108,11 @@
 }
 
 .top-menu__link {
+  color: #000000;
+
   font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 24px;
-  color: #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,10 +122,12 @@
   }
 
   .top-menu__list::before {
-    content: "";
     order: 1;
+
     width: 100%;
     height: 1px;
+
+    content: "";
   }
 
   .top-menu__toggle {
@@ -97,14 +135,18 @@
   }
 
   .top-menu__item {
+    z-index: 1;
+
     display: block;
     order: 2;
-    border: 0;
-    padding-left: 0;
+
     min-height: 88px;
     margin-right: 35px;
     padding-top: 20px;
     padding-bottom: 32px;
+    padding-left: 0;
+
+    border: 0;
 
     .top-menu__link {
       font-size: $regular-font-size;
@@ -116,18 +158,21 @@
   }
 
   .top-menu__item--logo {
+    order: 0;
+
     margin-right: auto;
     padding-top: 26px;
     padding-bottom: 27px;
-    order: 0;
   }
 
   .top-menu__item--search {
     order: 0;
-    padding-left: 82px;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
+
     margin-right: 0;
+    padding-left: 82px;
+
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
 
     .top-menu__link {
       font-size: 0;
@@ -137,17 +182,19 @@
   .top-menu__item--search::before {
     width: 82px;
     height: 88px;
+
     background-position: center 37px;
   }
 
   .top-menu__item--cart {
-    order: 0;
-    padding-top: 32px;
-    padding-left: 82px;
-    margin-right: 0;
-    width: 264px;
     display: flex;
     justify-content: flex-end;
+    order: 0;
+
+    width: 264px;
+    margin-right: 0;
+    padding-top: 32px;
+    padding-left: 82px;
 
     .top-menu__link {
       font-size: $subtitle-font-size;
@@ -161,31 +208,37 @@
 
   .top-menu__item--delivery {
     display: block;
+
     margin-right: 0;
     margin-left: auto;
 
     .top-menu__link {
-      font-weight: normal;
       color: $text-color;
+
+      font-weight: normal;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .top-menu__item {
-    width: 235px;
     order: 3;
+
+    width: 235px;
     margin: 0;
   }
 
   .top-menu__item--catalog {
-    width: 185px;
-    border-right: 1px solid #ececec;
     order: 0;
+
+    width: 185px;
+
+    border-right: 1px solid #ececec;
   }
 
   .top-menu__item--order {
     order: 0;
+
     padding-left: 35px;
   }
 
@@ -237,8 +290,8 @@
   }
 
   .top-menu__item--delivery {
-    margin-left: auto;
     width: unset;
+    margin-left: auto;
   }
 
   .top-menu__item--desktop-only {

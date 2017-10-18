@@ -1,15 +1,17 @@
 .catalog__list {
+  display: flex;
+  flex-direction: column;
+
   width: 260px;
   margin: 0 auto;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 .catalog__item {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+
   list-style: none;
 }
 
@@ -19,14 +21,15 @@
   }
 
   .catalog__item {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__list {
-    width: $desktop-content-width;
     flex-direction: row;
     justify-content: space-between;
+
+    width: $desktop-content-width;
   }
 }
