@@ -41,8 +41,12 @@
             <ul class="top-menu__list">
               <li class="top-menu__item top-menu__item--logo">
                 <a class="top-menu__logo-link logo" href="index.html">
-                      <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
-                    </a>
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="logo__image" src="img/logo-mobile.svg" alt="логотип Mishka">
+                  </picture>
+                </a>
               </li>
               <li class="top-menu__item top-menu__item--catalog">
                 <a href="catalog.html" class="top-menu__link">Каталог товаров</a>
@@ -155,7 +159,7 @@
         <div class="page-footer__wrapper">
           <div class="page-footer__logo">
             <a class="page-footer__logo-link logo" href="index.html">
-                <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+                <img class="logo__footer-image" src="img/logo-footer.svg" width="102" height="34" alt="логотип Mishka">
               </a>
           </div>
           <ul class="page-footer__social social">

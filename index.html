@@ -41,7 +41,11 @@
         <ul class="top-menu__list">
           <li class="top-menu__item top-menu__item--logo">
             <a class="top-menu__logo-link logo">
-              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="logo__image" src="img/logo-mobile.svg" alt="логотип Mishka">
+              </picture>
             </a>
           </li>
           <li class="top-menu__item top-menu__item--catalog">
@@ -108,7 +112,11 @@
               </tr>
             </table>
             <p class="promo__picture">
-              <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" alt="фото корзинок">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="фото корзинок">
+              </picture>
             </p>
             <p class="promo__price">Цена: 990 руб.</p>
             <a href="order.html" class="promo__make-order button">Заказать</a>
@@ -172,7 +180,11 @@
           <div class="contacts__map map">
             <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CBU0QTdc~D" width="100%" height="457" frameborder="0"></iframe>
             <p class="map__fallback">
-              <img class="map__image" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+              </picture>
             </p>
           </div>
         </address>
@@ -185,7 +197,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link logo">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+            <img class="logo__footer-image" src="img/logo-footer.svg" width="102" height="34" alt="логотип Mishka">
           </a>
         </div>
         <ul class="page-footer__social social">
