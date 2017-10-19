@@ -2,3 +2,22 @@
   width: 86px;
   height: 35px;
 }
+
+.logo__footer-image {
+  width: 102px;
+  height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 149px;
+    height: 72px;
+  }
+}

@@ -4,8 +4,6 @@
 
 .top-menu__toggle {
   position: absolute;
-  // right: 30px;
-  // top: 32px;
   top: 0;
   right: 0;
 
@@ -137,7 +135,7 @@
   .top-menu__item {
     z-index: 1;
 
-    display: block;
+    display: flex;
     order: 2;
 
     min-height: 88px;
@@ -161,8 +159,7 @@
     order: 0;
 
     margin-right: auto;
-    padding-top: 26px;
-    padding-bottom: 27px;
+    padding: 0;
   }
 
   .top-menu__item--search {

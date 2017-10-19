@@ -34,3 +34,6 @@ $tablet-content-width: $tablet-width - 2 * $tablet-horiz-padding;
 $desktop-width: 1150px;
 $desktop-horiz-padding: 50px;
 $desktop-content-width: $desktop-width - 2 * $desktop-horiz-padding;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
