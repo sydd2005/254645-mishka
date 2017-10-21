@@ -33,6 +33,7 @@ gulp.task("style", function() {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
@@ -92,6 +93,7 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["html"]);
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]).on("change", server.reload);
+  gulp.watch("*.html", ["html"]).on("change", server.reload);
+  gulp.watch("js/*.js", ["copy"]).on("change", server.reload);
 });
