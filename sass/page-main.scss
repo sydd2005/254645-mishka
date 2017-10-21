@@ -72,7 +72,11 @@
   }
 
   .page-main__title {
+    display: flex;
+    flex-direction: column;
+
     margin-bottom: 80px;
+    padding: 0;
     padding-top: 94px;
     padding-bottom: 79px;
 
@@ -106,12 +110,18 @@
     }
   }
 
+  .page-main__header--wavy {
+    @include wave(0, 17px, 1250px);
+  }
+
   .page-main__title {
     margin-bottom: 128px;
     padding-bottom: 100px;
 
     font-size: $desktop-title-font-size;
     line-height: $desktop-title-line-height;
+
+    @include wave(-8px, 18px);
   }
 
   .page-main__title--index {

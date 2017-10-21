@@ -1,5 +1,7 @@
 "use strict";
 
+var serveBase = "debug";
+
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
@@ -32,11 +34,11 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest(serveBase + "/css"))
     .pipe(server.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest(serveBase + "/css"));
 });
 
 gulp.task("sprite", function () {
@@ -45,7 +47,7 @@ gulp.task("sprite", function () {
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest(serveBase + "/img"));
 });
 
 gulp.task("html", function () {
@@ -53,11 +55,11 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
-  .pipe(gulp.dest("build/"));
+  .pipe(gulp.dest(serveBase + "/"));
 });
 
 gulp.task("clean", function () {
-  return del("build");
+  return del([serveBase + "/**", "!" + serveBase, "!" + serveBase + "/debug/**", "!" + serveBase + "/node_modules/**"]);
 });
 
 gulp.task("copy", function () {
@@ -70,7 +72,7 @@ gulp.task("copy", function () {
   ], {
     base: "."
   })
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest(serveBase));
 })
 
 gulp.task("build", function (done) {
@@ -86,7 +88,7 @@ gulp.task("build", function (done) {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/",
+    server: serveBase + "/",
     notify: false,
     open: true,
     cors: true,
