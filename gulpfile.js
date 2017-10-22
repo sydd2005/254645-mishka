@@ -1,6 +1,6 @@
 "use strict";
 
-var serveBase = "debug";
+var serveBase = "build";
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
