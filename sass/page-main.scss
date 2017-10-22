@@ -64,11 +64,15 @@
   }
 
   .page-main__header--wavy {
-    @include wave;
+    @include wave(0, 20px);
   }
 
   .page-main__title--wavy {
     @include wave;
+
+    &::after {
+      left: 0;
+    }
   }
 
   .page-main__title {
@@ -111,7 +115,7 @@
   }
 
   .page-main__header--wavy {
-    @include wave(0, 17px, 1250px);
+    @include wave(0, 17px);
   }
 
   .page-main__title {

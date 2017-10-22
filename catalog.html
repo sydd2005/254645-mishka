@@ -35,6 +35,9 @@
     <!-- // Pixel Glass -->
   </head>
   <body class="no-js">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="page-header__menu top-menu">
         <button class="top-menu__toggle" type="button">Открыть меню</button>
@@ -137,7 +140,11 @@
         </ul>
       </section>
       <section class="production-process">
-        <h2 class="production-process__title">Процесс производства</h2>
+        <h2 class="production-process__title">
+          <svg class="production-process__icon-video">
+            <use xlink:href="#icon-video"></use>
+          </svg>
+          Процесс производства</h2>
         <div class="production-process__video-wrapper">
           <p class="production-process__video-fallback">
             <picture>
@@ -170,7 +177,10 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__icon">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>HTML Academy</a>
         </div>
       </div>
     </footer>
