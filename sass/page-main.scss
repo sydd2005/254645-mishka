@@ -120,7 +120,9 @@
 
     font-size: $desktop-title-font-size;
     line-height: $desktop-title-line-height;
+  }
 
+  .page-main__title--wavy {
     @include wave(-8px, 18px);
   }
 

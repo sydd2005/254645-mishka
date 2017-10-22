@@ -24,6 +24,8 @@
 }
 
 .features__item {
+  position: relative;
+
   margin-bottom: 23px;
   padding-top: 60px;
   padding-right: 10px;
@@ -36,9 +38,25 @@
 .features__item--flower {
   padding-right: 65px;
 
-  background-image: url("../img/icon-feature-flower.svg");
-  background-repeat: no-repeat;
-  background-position: 8px 5px;
+  // background-image: url("../img/icon-feature-flower.svg");
+  // background-repeat: no-repeat;
+  // background-position: 8px 5px;
+}
+
+.feature__icon {
+  position: absolute;
+
+  path {
+    fill: $theme-color;
+  }
+}
+
+.feature__icon--flower {
+  top: 5px;
+  left: 8px;
+
+  width: 32px;
+  height: 37px;
 }
 
 .features__item--banknote {
