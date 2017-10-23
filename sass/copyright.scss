@@ -17,13 +17,14 @@
 }
 
 .copyright__link {
+  font-size: 0;
+}
+
+.copyright__icon {
   width: 27px;
   height: 35px;
 
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-
-  font-size: 0;
+  fill: $theme-color;
 }
 
 @media (min-width: $tablet-width) {

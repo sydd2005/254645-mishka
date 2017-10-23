@@ -1,4 +1,6 @@
 .promo {
+  position: relative;
+
   padding: 0;
   padding-bottom: 42px;
 
@@ -75,6 +77,8 @@
   .promo {
     margin-bottom: 50px;
     padding-bottom: 67px;
+
+    @include wavy-line(20px);
   }
 
   .promo__wrapper {
@@ -165,7 +169,7 @@
     padding-top: 53px;
     padding-bottom: 96px;
 
-    @include wavy-line;
+    @include wavy-line(26px);
   }
 
   .promo__header {
@@ -178,6 +182,8 @@
   }
 
   .promo__title {
+    z-index: 2;
+
     font-size: $desktop-title-font-size;
     line-height: $desktop-title-line-height;
   }
@@ -204,7 +210,7 @@
   }
 
   .promo__picture {
-    z-index: -1;
+    z-index: 1;
 
     width: 525px;
     height: 636px;

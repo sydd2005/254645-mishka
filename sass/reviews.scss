@@ -62,6 +62,8 @@
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 46px;
+
+    @include wavy-line(20px);
   }
 
   .reviews__wrapper {
@@ -90,6 +92,11 @@
     content: "";
 
     background-image: url("../img/review@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {
@@ -165,9 +172,17 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
 
-    @include wavy-line;
+    @include wavy-line(26px);
 
-    &::before,
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
+    &::before {
+      content: none;
+    }
+
     &::after {
       top: unset;
       left: 0;

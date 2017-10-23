@@ -22,7 +22,7 @@
   line-height: 24px;
 }
 
-.production-process__title::before {
+.production-process__icon-video {
   position: absolute;
   top: 30px;
   left: 33px;
@@ -30,9 +30,7 @@
   width: 32px;
   height: 32px;
 
-  content: "";
-
-  background-image: url("../img/icon-video.svg");
+  fill: $theme-color;
 }
 
 .production-process__video-wrapper {
@@ -115,11 +113,11 @@
 
     font-size: 20px;
     line-height: 24px;
+  }
 
-    &::before {
-      top: 32px;
-      left: 41px;
-    }
+  .production-process__icon-video {
+    top: 32px;
+    left: 41px;
   }
 
   .production-process__video-wrapper {
@@ -193,7 +191,7 @@
     padding-bottom: 0;
   }
 
-  .production-process__title::before {
+  .production-process__icon-video {
     top: -4px;
     left: 80px;
   }
