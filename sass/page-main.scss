@@ -51,6 +51,7 @@
   }
 
   .page-main__header {
+    height: 744px;
     min-height: 744px;
     max-height: 744px;
     margin-bottom: 45px;
@@ -129,10 +130,6 @@
 
   .page-main__title--wavy {
     @include wave(-8px, 18px);
-  }
-
-  .page-main__title--index {
-    margin-bottom: -119px;
   }
 
   .page-main__title--form {

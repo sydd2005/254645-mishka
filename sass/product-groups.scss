@@ -64,7 +64,8 @@
 @media (min-width: $tablet-width) {
   .product-groups {
     width: $tablet-content-width;
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: 0;
   }
 
   .product-groups__list {
