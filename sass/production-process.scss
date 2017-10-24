@@ -179,23 +179,43 @@
 }
 
 @media (min-width: $desktop-width) {
-  .production-process {
+  .production-process__wrapper {
     position: relative;
+
+    display: flex;
+    justify-content: flex-end;
 
     width: $desktop-content-width;
     height: 455px;
+    margin: 0 auto;
     margin-bottom: 104px;
+  }
+
+  .production-process {
+    width: 368px;
+    margin: 0;
     padding-top: 44px;
     padding-bottom: 59px;
-    padding-left: 682px;
 
     border: 1px solid #ededed;
     border-left: 0;
   }
 
+  .production-process__wrapper:hover {
+    .production-process {
+      box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .production-process__wrapper:active {
+    .production-process {
+      box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.1);
+    }
+  }
+
   .production-process__video-wrapper {
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 0;
 
     width: 682px;
