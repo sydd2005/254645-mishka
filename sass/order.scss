@@ -234,6 +234,7 @@
   border: 2px solid $stroke-color;
   outline: none;
 
+  font-family: $font-family;
   font-size: $subtitle-font-size;
   line-height: 18px;
 
@@ -445,7 +446,13 @@
 
   .order__legend {
     min-width: 175px;
+    margin-top: 0;
     padding-left: 62px;
+  }
+
+  .order__text-input {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .order__input-group--wrapped-line {

@@ -132,7 +132,7 @@
   border-top: 1px solid #ececec;
 }
 
-.top-menu__item--search::before {
+.top-menu__link--search::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -148,7 +148,7 @@
   background-position: center;
 }
 
-.top-menu__item--cart::before {
+.top-menu__link--cart::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -240,7 +240,7 @@
     }
   }
 
-  .top-menu__item--search::before {
+  .top-menu__link--search::before {
     width: 82px;
     height: 88px;
 
@@ -262,7 +262,7 @@
     }
   }
 
-  .top-menu__item--cart::before {
+  .top-menu__link--cart::before {
     width: 82px;
     height: 88px;
   }
