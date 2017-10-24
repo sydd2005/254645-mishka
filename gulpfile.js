@@ -67,13 +67,14 @@ gulp.task("copy", function () {
     "fonts/**/*.{woff,woff2}",
     "img/**",
     //"!img/**/*.svg",
+    "css/normalize.css",
     "js/*.js",
     "!**/*.md"
   ], {
     base: "."
   })
   .pipe(gulp.dest(serveBase));
-})
+});
 
 gulp.task("build", function (done) {
   runSequence(
