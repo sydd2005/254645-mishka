@@ -1,9 +1,11 @@
 .page-footer {
-  @include inner-wrapper;
   background-color: #f1f1f1;
+
+  @include inner-wrapper;
 }
 
 .page-footer__social {
+  height: 80px;
   margin: 0;
 }
 
@@ -11,15 +13,21 @@
   display: none;
 }
 
+.page-footer__copyright {
+  height: 80px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
     width: $tablet-content-width;
-    padding: 0;
-    margin: 0 auto;
+    height: 143px;
     min-height: 143px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .page-footer__logo,
