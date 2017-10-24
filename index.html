@@ -31,10 +31,20 @@
             <a href="form.html" class="top-menu__link">Вязание на заказ</a>
           </li>
           <li class="top-menu__item top-menu__item--search">
-            <a href="#" class="top-menu__link top-menu__link--search">Поиск по сайту</a>
+            <a href="#" class="top-menu__link top-menu__link--search">
+              <svg class="top-menu__icon top-menu__icon--search" width="20" height="20">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              Поиск по сайту
+            </a>
           </li>
           <li class="top-menu__item top-menu__item--cart">
-            <a href="#" class="top-menu__link top-menu__link--cart">Корзина: пока пуста</a>
+            <a href="#" class="top-menu__link top-menu__link--cart">
+              <svg class="top-menu__icon top-menu__icon--cart" width="20" height="20">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
           </li>
           <li class="top-menu__item top-menu__item--desktop-only top-menu__item--new-arrivals">
             <a href="#" class="top-menu__link">Новые поступления</a>
@@ -152,8 +162,8 @@
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--prev button" type="button">Предыдущий отзыв</button>
-            <button class="slider__toggle slider__toggle--next button" type="button">Следующий отзыв</button>
+            <button class="slider__toggle slider__toggle--prev button button--arrow" type="button">Предыдущий отзыв</button>
+            <button class="slider__toggle slider__toggle--next button button--arrow" type="button">Следующий отзыв</button>
           </p>
           <button class="reviews__add button" type="button">Написать</button>
         </div>

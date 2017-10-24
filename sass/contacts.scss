@@ -58,6 +58,18 @@
   color: $text-color;
   box-shadow: 0 4px 0 0 $background-color,
     0 5px 0 0 $theme-stroke-color;
+
+  &:hover {
+    color: $theme-hover-color;
+    box-shadow: 0 4px 0 0 $background-color,
+      0 5px 0 0 $theme-hover-color;
+  }
+
+  &:active {
+    color: transparentize($theme-hover-color, 0.7);
+    box-shadow: 0 4px 0 0 $background-color,
+      0 5px 0 0 transparentize($theme-hover-color, 0.9);
+  }
 }
 
 @media (min-width: $tablet-width) {

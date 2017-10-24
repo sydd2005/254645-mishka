@@ -1,24 +1,48 @@
 .button {
   display: block;
-  background-color: transparent;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $text-color;
-  border: 2px solid $stroke-color;
+
   width: 100%;
   min-height: 52px;
-  text-align: center;
   padding-top: 14px;
   padding-bottom: 14px;
-  cursor: pointer;
 
-  &--primary {
-    background-color: $theme-color;
-    border: 0;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $text-color;
+  border: 2px solid $stroke-color;
+  background-color: transparent;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+
+  &:hover {
     color: #ffffff;
+    background-color: $stroke-color;
   }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: $stroke-color;
+  }
+}
+
+.button--arrow {
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.button--primary {
+  color: #ffffff;
+  border: 0;
+  background-color: $theme-color;
 }
 
 @media (min-width: $tablet-width) {

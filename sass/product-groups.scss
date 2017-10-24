@@ -45,11 +45,28 @@
   }
 }
 
+.product-groups__link:hover::before {
+  opacity: 0.7;
+}
+
+.product-groups__link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
 .product-groups__link--light {
   background-color: $theme-color;
 
   &::before {
     background-image: url("../img/icon-interior.svg");
+  }
+
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
   }
 }
 
@@ -58,6 +75,11 @@
 
   &::before {
     background-image: url("../img/icon-toy.svg");
+  }
+
+  &:hover,
+  &:active {
+    background-color: #46c1ae;
   }
 }
 
