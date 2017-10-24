@@ -39,8 +39,9 @@
   height: 150px;
 }
 
-.production-process__video-wrapper::before {
+.production-process__play-button {
   position: absolute;
+  z-index: 3;
   top: 0;
   right: 0;
   bottom: 0;
@@ -50,9 +51,24 @@
   height: 77px;
   margin: auto;
 
-  content: "";
-
+  border: 0;
+  background-color: transparent;
   background-image: url("../img/icon-play.svg");
+  background-size: cover;
+
+  &:hover {
+    width: 101px * 1.2;
+    height: 77px * 1.2;
+
+    cursor: pointer;
+  }
+
+  &:active {
+    width: 101px * 0.8;
+    height: 77px * 0.8;
+
+    opacity: 0.3;
+  }
 }
 
 .production-process__video-fallback {
@@ -183,6 +199,11 @@
     left: 0;
 
     width: 682px;
+  }
+
+  .production-process__video {
+    position: absolute;
+    top: 0;
   }
 
   .production-process__title {
