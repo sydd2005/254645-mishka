@@ -13,6 +13,20 @@
   display: none;
 }
 
+.page-footer__logo-link:hover {
+  cursor: pointer;
+
+  fill: $theme-hover-color;
+}
+
+.page-footer__logo-link:active {
+  cursor: pointer;
+
+  opacity: 0.3;
+
+  fill: $theme-hover-color;
+}
+
 .page-footer__copyright {
   height: 80px;
 }

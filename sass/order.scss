@@ -78,6 +78,14 @@
   font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 18px;
+
+  &:hover::before {
+    border-color: $theme-stroke-color;
+  }
+
+  &:active::before {
+    border-color: #c7c7c7;
+  }
 }
 
 .order__choice-label--color {
@@ -122,6 +130,14 @@
   border-radius: 50%;
 }
 
+.order__radio:focus + .order__choice-label::before {
+  border-color: $theme-stroke-color;
+}
+
+.order__checkbox:focus + .order__choice-label::before {
+  border-color: $theme-stroke-color;
+}
+
 .order__radio:checked + .order__choice-label::before {
   background-image: radial-gradient(circle at center, $theme-stroke-color 7px, transparent 8px, transparent 100%);
 }
@@ -151,7 +167,9 @@
   font-size: $subtitle-font-size;
   line-height: 18px;
 
-  &:focus {
+  &:hover,
+  &:focus,
+  &:active {
     border-bottom-color: $theme-stroke-color;
   }
 
@@ -176,51 +194,37 @@
   }
 }
 
-.order__hidden-label::after {
+.order__icon {
   position: absolute;
 
   width: 40px;
   height: 40px;
 
-  content: "";
-
   opacity: 0.2;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.order__hidden-label--phone::after {
+.order__text-input:hover + .order__icon,
+.order__text-input:focus + .order__icon,
+.order__text-input:active + .order__icon {
+  opacity: 1;
+
+  fill: $theme-stroke-color;
+}
+
+.order__icon--phone {
   top: -14px;
   right: 1px;
 
-  background-image: url("../img/icon-phone.svg");
+  width: 25px;
+  height: 25px;
 }
 
-.order__hidden-label--email::after {
+.order__icon--email {
   top: -10px;
   right: 0;
 
-  background-image: url("../img/icon-mail.svg");
-}
-
-.order__text-input--phone::after,
-.order__text-input--email::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 40px;
-  height: 40px;
-
-  content: "";
-}
-
-.order__text-input--phone::after {
-  background-image: url("../img/icon-phone.svg");
-}
-
-.order__text-input--email::after {
-  background-image: url("../img/icon-mail.svg");
+  width: 32px;
+  height: 32px;
 }
 
 .order__textarea {
@@ -238,7 +242,9 @@
   font-size: $subtitle-font-size;
   line-height: 18px;
 
-  &:focus {
+  &:hover,
+  &:focus,
+  &:active {
     border-color: $theme-stroke-color;
   }
 
@@ -396,12 +402,12 @@
     padding-bottom: 38px;
   }
 
-  .order__hidden-label--phone::after {
+  .order__icon--phone {
     top: -11px;
     right: 19px;
   }
 
-  .order__hidden-label--email::after {
+  .order__icon--email {
     top: -7px;
     right: 18px;
   }
@@ -469,8 +475,12 @@
     padding: 0 175px;
   }
 
-  .order__hidden-label--phone::after,
-  .order__hidden-label--email::after {
-    right: 0;
+  .order__icon--phone {
+    top: -6px;
+    right: 7px;
+  }
+
+  .order__icon--email {
+    right: 4px;
   }
 }

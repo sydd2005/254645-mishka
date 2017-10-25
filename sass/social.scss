@@ -1,10 +1,12 @@
 .social {
-  padding: 0;
-  list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
   min-height: 80px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .social__item {
@@ -13,23 +15,29 @@
 
 .social__link {
   display: block;
+
   width: 30px;
   height: 30px;
-  font-size: 0;
+
   background-repeat: no-repeat;
   background-position: center;
+
+  font-size: 0;
 }
 
-.social__link--instagram {
-  background-image: url("../img/icon-insta.svg");
+.social__link:hover .social__icon {
+  fill: $theme-stroke-color;
 }
 
-.social__link--facebook {
-  background-image: url("../img/icon-fb.svg");
+.social__link:active .social__icon {
+  opacity: 0.3;
+
+  fill: $theme-stroke-color;
 }
 
-.social__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
+.social__icon {
+  width: 30px;
+  height: 30px;
 }
 
 .social__item:last-child {

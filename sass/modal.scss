@@ -93,6 +93,14 @@
   font-size: $subtitle-font-size;
   font-weight: bold;
   line-height: 16px;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: $theme-stroke-color;
+  }
 }
 
 .modal__radio:checked + .modal__label {
