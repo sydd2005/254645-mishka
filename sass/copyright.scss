@@ -11,13 +11,32 @@
 .copyright__text {
   margin-right: 30px;
 
+  color: #000000;
+
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
 }
 
 .copyright__link {
+  display: flex;
+  align-items: center;
+
   font-size: 0;
+}
+
+.copyright__link:hover {
+  .copyright__icon {
+    fill: $theme-hover-color;
+  }
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+
+  .copyright__icon {
+    fill: $theme-hover-color;
+  }
 }
 
 .copyright__icon {

@@ -165,20 +165,44 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link logo" href="index.html">
-            <img class="logo__footer-image" src="img/logo-footer.svg" width="102" height="34" alt="логотип Mishka">
+            <svg class="logo__footer-image" width="102" height="34">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
           </a>
         </div>
         <ul class="page-footer__social social">
-          <li class="social__item"><a href="#" class="social__link social__link--instagram">Instagram</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">
+              <svg class="social__icon">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+              Instagram
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              <svg class="social__icon">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+              Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+              <svg class="social__icon">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              Twitter
+            </a>
+          </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
             <svg class="copyright__icon">
               <use xlink:href="#logo-htmlacademy"></use>
-            </svg>HTML Academy</a>
+            </svg>
+            HTML Academy</a>
         </div>
       </div>
     </footer>
