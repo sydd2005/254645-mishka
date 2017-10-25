@@ -16,6 +16,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 
 gulp.task("imagemin", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
@@ -24,6 +25,12 @@ gulp.task("imagemin", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
+  .pipe(gulp.dest("img"));
+});
+
+gulp.task("webp", function () {
+  return gulp.src("img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
   .pipe(gulp.dest("img"));
 });
 
