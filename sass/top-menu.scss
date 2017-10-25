@@ -170,7 +170,9 @@
 }
 
 .top-menu__link--search:hover,
-.top-menu__link--cart:hover {
+.top-menu__link--cart:hover,
+.top-menu__link--search:focus,
+.top-menu__link--cart:focus {
   opacity: 1;
   color: rgba(0, 0, 0, 0.6);
 

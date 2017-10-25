@@ -169,8 +169,10 @@
     padding-bottom: 160px;
     padding-left: 175px;
 
+    background-color: #f2f2f2;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    box-shadow: inset -805px -200px 0 -106px #ffffff;
 
     @include wavy-line(26px);
 
