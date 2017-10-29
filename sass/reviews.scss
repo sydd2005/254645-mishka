@@ -63,7 +63,7 @@
   .reviews {
     margin-bottom: 46px;
 
-    @include wavy-line(20px);
+    @include wavy-line(20px, 15px);
   }
 
   .reviews__wrapper {
@@ -174,7 +174,7 @@
     background-repeat: no-repeat;
     box-shadow: inset -805px -200px 0 -106px #ffffff;
 
-    @include wavy-line(26px);
+    @include wavy-line(26px, 23px);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");

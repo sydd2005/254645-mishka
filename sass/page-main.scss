@@ -66,7 +66,7 @@
   }
 
   .page-main__header--wavy {
-    @include wave(0, 20px);
+    @include wave(-6px, 11px);
   }
 
   .page-main__title--wavy {
@@ -117,7 +117,7 @@
   }
 
   .page-main__header--wavy {
-    @include wave(0, 17px);
+    @include wave(14px, 17px);
   }
 
   .page-main__title {

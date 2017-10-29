@@ -23,7 +23,7 @@
   clip-path: inset(100%);
 }
 
-@mixin wavy-line($offset: 8px) {
+@mixin wavy-line($offset: 8px, $height: 6px) {
   position: relative;
 
   &::after {
@@ -31,18 +31,18 @@
     bottom: 0;
 
     width: 100%;
-    height: 23px;
+    height: $height;
 
     content: "";
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: $offset bottom;
-    background-size: contain;
+    background-size: auto $height;
   }
 }
 
-@mixin wave ($offset-x: 0, $offset-y: 23px, $bg-size: contain) {
+@mixin wave ($offset-x: 0, $height: 11px) {
   position: relative;
 
   &::after {
@@ -50,13 +50,13 @@
     bottom: 0;
 
     width: 100%;
-    height: 34px;
+    height: $height;
 
     content: "";
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-position: $offset-x $offset-y;
-    background-size: $bg-size;
+    background-position: $offset-x top;
+    background-size: auto (2 * $height);
   }
 }
